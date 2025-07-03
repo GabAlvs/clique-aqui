@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Livia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="backgroundMusic" src="assets/Marvin Gaye - Let's Get It On.mp3" loop preload="auto"></audio>
+    
+    <button id="startButton" class="initial-button">Clique aqui!</button>
+
+    <div class="message hidden" id="message1">Oi Lívia</div>
+    <div class="message hidden" id="message2">Minha vontade de sair com você é igual o Vasco...</div>
+    <div class="message vasco-color hidden" id="message3">
+        <span style="color: white;">G</span>
+        <span style="color: black;">I</span>
+        <span style="color: white;">G</span>
+        <span style="color: black;">A</span>
+        <span style="color: white;">N</span>
+        <span style="color: black;">T</span>
+        <span style="color: white;">E</span>
+        <span style="color: red;">!</span>
+    </div>
+    <div class="message hidden" id="message4">Por isso, tenho uma pergunta</div>
+
+    <div id="calendar-container" class="hidden"></div> 
+
+    <div id="invitation-container" class="hidden">
+        <h2>E então...?</h2>
+        <p>Você aceita sair comigo no dia <span id="selected-day"></span>?</p>
+        <div class="invitation-buttons">
+            <button id="accept-button">SIM!</button>
+            <button id="reject-button">Não</button>
+        </div>
+    </div>
+
+    <div id="final-message-container" class="hidden">
+        <p id="final-text"></p>
+        <img id="final-image" src="" alt="Imagem de celebração">
+    </div>
+
+    <button id="questionButton" class="hidden">Quero muito saber a pergunta, Gabi!</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
